@@ -1,0 +1,32 @@
+{
+  "name": "KingstonDataScienceWebsite",
+  "version": "1.0.0",
+  "authors": [
+    "dawudrahmanaqovia <dawud.rahman@aqovia.com>"
+  ],
+  "description": "Main Company Website",
+  "homepage": "www.kingstondatascience.com",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.5",
+    "fontawesome": "~4.4.0",
+    "less": "~2.5.1",
+    "normalize.css": "~3.0.3",
+    "modernizr": "~2.8.3"
+  },
+  "overrides": {
+    "bootstrap": {
+      "main": [
+        "src/less/!(variables).less",
+        "./dist/fonts/*",
+        "./dist/js/bootstrap.js"
+      ]
+    }
+  }
+}
